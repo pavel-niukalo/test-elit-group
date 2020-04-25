@@ -1,0 +1,19 @@
+.button {
+  color: @button-color;
+
+  background-color: transparent;
+  border: 1px solid @button-color;
+  border-radius: 4px;
+
+  transition: 0.3s linear;
+
+  &:hover,
+  &:focus {
+    color: @white;
+    background-color: @button-color;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

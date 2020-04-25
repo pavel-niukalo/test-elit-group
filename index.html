@@ -4,12 +4,65 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Сантехника Тут</title>
-    <!-- <link rel="preload" href="fonts/opensans.woff2" as="font"> -->
-    <!-- <link rel="preload" href="fonts/opensanslight.woff2" as="font"> -->
-    <!-- <link rel="preload" href="fonts/opensansbold.woff2" as="font"> -->
+    <link rel="preload" href="fonts/roboto-regular.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-bold.woff2" as="font">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <picture>
+          <!-- <source type="image/webp" srcset="img/logo@2x.webp 2x", img/logo@1x.webp 1x"> -->
 
+          <img src="img/logo@1x.jpg" srcset="img/logo@2x.jpg 2x" width="320" height="118" alt="Grone">
+        </picture>
+      </div>
+      <nav class="page-header__nav">
+        <picture>
+          <!-- <source type="image/webp" srcset="img/logo-plumbing@2x.webp 2x", img/logo-plumbing@1x.webp 1x"> -->
+
+          <img src="img/logo-plumbing@1x.png" srcset="img/logo-plumbing@2x.jpg 2x" width="251" height="48" alt="Сантехника Тут. Интернет-магазин">
+        </picture>
+          <div class="page-header__phone">
+          <p>8 495 565-35-25<br><span>Каждый день с 9 до 22</span></p>
+          <a class="page-header__link button" href="#">Заказать звонок</a>
+        </div>
+        <picture>
+          <!-- <source type="image/webp" srcset="img/grohe@2x.webp 2x", img/grohe@1x.webp 1x"> -->
+
+          <img src="img/grohe@1x.png" srcset="img/grohe@2x.jpg 2x" width="104" height="32" alt="GROHE">
+        </picture>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Интернет-магазин Сантехника Тут</h1>
+      <picture>
+        <!-- <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@2x.webp 2x, img/bg-map-desktop@1x.webp 1x"> -->
+        <!-- <source type="image/webp" srcset="img/grohe@2x.webp 2x", img/grohe@1x.webp 1x"> -->
+
+        <!-- <source media="(min-width: 960px)" srcset="img/bg-map-desktop@2x.jpg 2x, img/bg-map-desktop@1x.jpg 1x"> -->
+        <img class="main-banner" src="img/banner-mobile@1x.png" srcset="img/banner-mobile@2x.png 2x" width="320" height="140" alt="banner">
+      </picture>
+
+      <section class="commodity-sections">
+        <h2 class="commodity-sections__heading heading">Популярные товарные разделы</h2>
+
+        <div class="commodity-sections__item">
+          <picture>
+            <!-- <source type="image/webp" srcset="img/grohe@2x.webp 2x", img/grohe@1x.webp 1x"> -->
+
+            <img src="img/mixers@1x.jpg" srcset="img/mixers@2x.jpg 2x" width="300" height="225" alt="mixers">
+          </picture>
+          <a class="commodity-sections__link" href="#">Смесители</a>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+
+    </footer>
   </body>
 </html>

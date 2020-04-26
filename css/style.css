@@ -80,7 +80,7 @@ a {
   background-color: transparent;
   border: 1px solid #47A2D8;
   border-radius: 4px;
-  transition: 0.3s linear;
+  transition: 0.4s linear;
 }
 .button:hover,
 .button:focus {
@@ -104,21 +104,14 @@ a {
   text-align: center;
   color: #142f4f;
 }
-.commodity-sections__heading {
-  margin-bottom: 15px;
-}
-.commodity-sections__item {
+.item {
+  display: block;
   box-sizing: border-box;
-  width: 320px;
-  padding: 0 10px;
-  margin: 0 auto;
+  min-width: 300px;
+  margin-right: 10px;
 }
-.commodity-sections__item img {
-  display: block;
-}
-.commodity-sections__link {
+.description {
   position: relative;
-  display: block;
   box-sizing: border-box;
   width: 100%;
   padding: 11px;
@@ -129,12 +122,63 @@ a {
   color: #FFFFFF;
   background-color: #142f4f;
   z-index: 2;
-  transition: 0.3s linear;
 }
-.commodity-sections__link:hover,
-.commodity-sections__link:focus {
+.container {
+  display: flex;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 10px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.commodity-sections__heading {
+  margin-bottom: 15px;
+}
+.commodity-sections__item img {
+  display: block;
+  transition: 0.4s linear;
+}
+.commodity-sections__item {
+  overflow: hidden;
+}
+.commodity-sections__item:hover,
+.commodity-sections__item:focus {
+  cursor: pointer;
+}
+.commodity-sections__item:hover img,
+.commodity-sections__item:focus img {
+  transform: scale(1.1);
+}
+.commodity-sections__item:hover .commodity-sections__description,
+.commodity-sections__item:focus .commodity-sections__description {
   background-color: #47A2D8;
 }
-.commodity-sections__link:active {
+.commodity-sections__item:active .commodity-sections__description {
+  opacity: 0.5;
+}
+.collections__heading {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.collections img {
+  display: block;
+  transition: 0.4s linear;
+}
+.collections__item {
+  overflow: hidden;
+}
+.collections__item:hover,
+.collections__item:focus {
+  cursor: pointer;
+}
+.collections__item:hover img,
+.collections__item:focus img {
+  transform: scale(1.1);
+}
+.collections__item:hover .collections__description,
+.collections__item:focus .collections__description {
+  background-color: #47A2D8;
+}
+.collections__item:active .collections__description {
   opacity: 0.5;
 }

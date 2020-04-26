@@ -1,0 +1,33 @@
+.collections__heading {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.collections img {
+  display: block;
+
+  transition: 0.4s linear;
+}
+
+.collections__item {
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.collections__item:hover img,
+.collections__item:focus img {
+  transform: scale(1.1);
+}
+
+.collections__item:hover .collections__description,
+.collections__item:focus .collections__description {
+  background-color: @button-color;
+}
+
+.collections__item:active .collections__description {
+  opacity: 0.5;
+}

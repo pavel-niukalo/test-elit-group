@@ -208,3 +208,47 @@
     opacity: 0.5;
   }
 }
+
+@media (min-width: 768px) {
+  .special-offer__item {
+    min-width: 292px;
+    max-width: 292px;
+    margin-right: 29px;
+    margin-bottom: 29px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .special-offer__item img {
+    height: 273px;
+  }
+
+  .special-offer__description {
+    margin: 3px 0 2px;
+
+    letter-spacing: -0.2px;
+  }
+
+  .special-offer__link {
+    padding: 8px 13px 8px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .special-offer__heading {
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+
+  .special-offer__item {
+    &:nth-child(2n) {
+      margin-right: 29px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

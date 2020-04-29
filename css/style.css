@@ -95,7 +95,6 @@ a {
   }
   .page-header__link-logo {
     margin: 0;
-    margin-left: 5px;
   }
   .page-header__phone {
     margin-top: 0;
@@ -110,7 +109,7 @@ a {
     margin-bottom: 10px;
   }
   .page-header .page-header__grohe {
-    margin-right: -6px;
+    margin-right: -2px;
     margin-top: 8px;
   }
 }
@@ -159,6 +158,27 @@ a {
   min-width: 300px;
   margin-right: 10px;
 }
+.item:last-child {
+  margin-right: 0;
+}
+@media (min-width: 768px) {
+  .item {
+    min-width: 290px;
+    margin-right: 33px;
+    margin-bottom: 33px;
+  }
+  .item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .item:nth-child(2n) {
+    margin-right: 33px;
+  }
+  .item:last-child {
+    margin-right: 0;
+  }
+}
 .description {
   position: relative;
   box-sizing: border-box;
@@ -173,6 +193,11 @@ a {
   z-index: 2;
   transition: 0.4s linear;
 }
+@media (min-width: 768px) {
+  .description {
+    width: 290px;
+  }
+}
 .container {
   display: flex;
   box-sizing: border-box;
@@ -180,6 +205,17 @@ a {
   padding: 0 10px;
   margin: 0 auto;
   overflow-x: hidden;
+}
+@media (min-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    width: 633px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
 }
 .commodity-sections__heading {
   margin-bottom: 15px;
@@ -191,10 +227,6 @@ a {
 .commodity-sections__item {
   overflow: hidden;
 }
-.commodity-sections__item:hover,
-.commodity-sections__item:focus {
-  cursor: pointer;
-}
 .commodity-sections__item:hover img,
 .commodity-sections__item:focus img {
   transform: scale(1.1);
@@ -205,7 +237,11 @@ a {
 }
 @media (min-width: 768px) {
   .commodity-sections__heading {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
+  }
+  .commodity-sections__item img {
+    width: 290px;
+    height: 218px;
   }
 }
 .collections__heading {
@@ -230,6 +266,20 @@ a {
 .collections__item:hover .collections__description,
 .collections__item:focus .collections__description {
   background-color: #3fBAE8;
+}
+@media (min-width: 768px) {
+  .collections__heading {
+    margin-bottom: 24px;
+  }
+  .collections img {
+    width: 290px;
+    height: 218px;
+  }
+}
+@media (min-width: 1280px) {
+  .collections__heading {
+    margin-top: 8px;
+  }
 }
 .special-offer__heading {
   margin-top: 21px;
@@ -387,6 +437,39 @@ a {
 .special-offer__icon:active {
   opacity: 0.5;
 }
+@media (min-width: 768px) {
+  .special-offer__item {
+    min-width: 292px;
+    max-width: 292px;
+    margin-right: 29px;
+    margin-bottom: 29px;
+  }
+  .special-offer__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .special-offer__item img {
+    height: 273px;
+  }
+  .special-offer__description {
+    margin: 3px 0 2px;
+    letter-spacing: -0.2px;
+  }
+  .special-offer__link {
+    padding: 8px 13px 8px;
+  }
+}
+@media (min-width: 1280px) {
+  .special-offer__heading {
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+  .special-offer__item:nth-child(2n) {
+    margin-right: 29px;
+  }
+  .special-offer__item:last-child {
+    margin-right: 0;
+  }
+}
 .design-technologies__heading {
   margin-top: 22px;
   margin-bottom: 42px;
@@ -397,13 +480,62 @@ a {
 }
 .design-technologies__text {
   box-sizing: border-box;
-  width: 320px;
+  max-width: 320px;
   padding: 14px 9px 5px 11px;
   margin: 0 auto;
 }
 .design-technologies__text p {
   margin-top: 0;
   margin-bottom: 21px;
+}
+.design-technologies__line {
+  width: 100%;
+  height: 1px;
+  margin-top: 62px;
+  margin-bottom: 36px;
+  background-color: #EEEEEE;
+}
+@media (min-width: 768px) {
+  .design-technologies__description img {
+    width: 480px;
+    height: 360px;
+  }
+  .design-technologies__text {
+    max-width: 750px;
+  }
+}
+@media (min-width: 1140px) {
+  .design-technologies__wrapper {
+    box-sizing: border-box;
+    max-width: 1280px;
+    padding: 0 10px;
+    padding-bottom: 84px;
+    margin: 0 auto;
+  }
+  .design-technologies__heading {
+    margin-top: 14px;
+    margin-bottom: 23px;
+    text-align: left;
+  }
+  .design-technologies__description {
+    display: flex;
+  }
+  .design-technologies__text {
+    max-width: 750px;
+    padding-top: 0;
+    margin-left: 26px;
+    margin-top: -2px;
+  }
+  .design-technologies__text--technologies {
+    order: -1;
+    padding-left: 0;
+    margin-left: 2px;
+    margin-top: -5px;
+  }
+  .design-technologies__description--technologies img {
+    margin-right: 13px;
+    margin-top: 1px;
+  }
 }
 .page-footer {
   color: #FFFFFF;
@@ -414,7 +546,7 @@ a {
 }
 .page-footer__wrapper {
   box-sizing: border-box;
-  width: 320px;
+  max-width: 320px;
   padding: 23px 10px;
   margin: 0 auto;
 }
@@ -471,4 +603,28 @@ a {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    max-width: 768px;
+    padding-top: 44px;
+  }
+}
+@media (min-width: 1280px) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    padding-top: 44px;
+  }
+  .page-footer__info {
+    margin-left: 107px;
+  }
+  .page-footer__seller {
+    margin-right: 117px;
+  }
+  .page-footer__footnote {
+    padding-bottom: 41px;
+    margin-top: -38px;
+  }
 }

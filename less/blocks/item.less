@@ -4,4 +4,32 @@
   box-sizing: border-box;
   min-width: 300px;
   margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .item {
+    min-width: 290px;
+    margin-right: 33px;
+    margin-bottom: 33px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .item {
+    &:nth-child(2n) {
+      margin-right: 33px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

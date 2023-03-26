@@ -5,7 +5,7 @@
 
 Браузерная поддержка - Google Chrome, Mozilla Firefox, IE 11
 
-[Ссылка на проект](https://pavel-nyukalo.github.io/test-elit-group/)
+[Ссылка на проект](https://pavel-niukalo.github.io/test-elit-group/)
 
 ## Используемые технологии
 * HTML
